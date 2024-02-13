@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: auto;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(237, 234, 234);
+  max-height: calc(100vh - 40px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;  
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+  justify-content: space-between; /* Distribute buttons evenly across the container */
+  align-items: center;
+  width: 100%; /* Ensure buttons fill the container width */
+  max-width: 400px; /* Set maximum width for the container */
+}
+
+button {
+  flex: 0 0 calc(25% - 10px); /* Adjust button width to occupy 25% of the container width with spacing */
+  height: 75px;
+  width: 50px;
+  margin: 5px; /* Add margin between buttons for spacing */
+  background-color: white;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+}
+button:hover {
+  background-color: rgb(221, 215, 215);
+}
+.display {
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+  background-color: black;
+  width: 95%;
+  height: 50px;
+  margin-top : 5px;
+  font-size: 30px;
+  padding: 10px; /* Add padding for better display */
+}
+
+.operator {
+  color:rgb(67, 25, 118);
+  font-weight: bolder;
+
+}
+.ac{
+  color: red;
+}
+.equal {
+  background-color: rgb(67, 25, 118);
+  color: white;
+}
